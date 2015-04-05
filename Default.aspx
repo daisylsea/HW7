@@ -12,6 +12,7 @@
     <div>
     
         Hello customer!
+        <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
     
     </div>
     </form>
