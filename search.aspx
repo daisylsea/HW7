@@ -7,16 +7,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_jewelry %>" SelectCommand="SELECT * FROM [xliang1_jewelry]"></asp:SqlDataSource>
-    <% If Not IsPostBack Then%>Search for a Jewelry by name
+    <% If Not IsPostBack Then%>
+    Search for a Jewelry by name&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:TextBox ID="tb_search" runat="server" AutoPostBack="True"></asp:TextBox>
    
     <br />
-    <% Else%> Search for a jewelry by color&nbsp;
+    <% Else%> 
+    Search another jewelry by name
     <asp:TextBox ID="tb_search1" runat="server" AutoPostBack="True"></asp:TextBox>
    
     <br />
     <br />
-    <% End If %>
     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" 
         AutoGenerateColumns="False" DataKeyNames="j_ID" DataSourceID="SqlDataSource1"
         BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" 
@@ -28,13 +29,16 @@
             <asp:BoundField DataField="j_color" HeaderText="Color" SortExpression="j_color" />
             <asp:BoundField DataField="j_size" HeaderText="Size" SortExpression="j_size" />
             <asp:BoundField DataField="j_weight" HeaderText="Weight" SortExpression="j_weight" />
-            <asp:BoundField DataField="j_number" HeaderText="Quantity" SortExpression="j_number" />
-        </Columns>
+            <asp:BoundField DataField="j_number" HeaderText="Quantity" SortExpression="j_number" >
+             <ItemStyle HorizontalAlign="Center" />
+            </asp:BoundField>
+             </Columns>
         <FooterStyle BackColor="#CCCC99" />
         <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
         <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
         <AlternatingRowStyle BackColor="White" />
     </asp:GridView>
+    <%End if %>
 </asp:Content>
 

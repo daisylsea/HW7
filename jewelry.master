@@ -26,6 +26,7 @@
                 <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_Admin" runat="server" NavigateUrl="~/Admin/Default.aspx">Admin</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_ViewAll" runat="server" NavigateUrl="~/ViewAll.aspx">ViewAll</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_Edit" runat="server" NavigateUrl="~/Admin/ViewAll.aspx">Edit & Delete</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_New" runat="server" NavigateUrl="~/Admin/New.aspx">New Jewelry</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_Contact" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
