@@ -23,13 +23,13 @@
         </div>
         <div id="menu">
             <ul id="nav">
-                <li><a href="./Default.aspx">Home</a></li>
-                <li><a href="./Admin/ViewAll.aspx">Admin</a></li>
-                <li><a href="./ViewAll.aspx">View All</a></li>
-                <li><a href="./Admin/New.aspx">New Jewelry</a></li>
-                <li><a href="./AboutUs.aspx">About Us</a></li>
-                <li><a href="./ContactUs.aspx">Contact Us</a></li>
-                <li><a href="./login/login.aspx">Login</a></li>
+                <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_Admin" runat="server" NavigateUrl="~/Admin/Default.aspx">Admin</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_ViewAll" runat="server" NavigateUrl="~/ViewAll.aspx">ViewAll</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_New" runat="server" NavigateUrl="~/Admin/New.aspx">New Jewelry</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_Contact" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_Search" runat="server" NavigateUrl="~/Search.aspx">Search</asp:HyperLink></li>
             </ul>
         </div>
         <div id="main">

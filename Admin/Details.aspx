@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/jewelry.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Admin_Details" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <title>Admin's Edit and Delete</title>
+     <link rel="stylesheet" type="text/css"href="../css/style.css" />
+     <link rel="stylesheet" type="text/css"href="../css/admin.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <center>

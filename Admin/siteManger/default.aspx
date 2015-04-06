@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+      <link rel="stylesheet" type="text/css"href="../../css/style.css" />
+     <link rel="stylesheet" type="text/css"href="../../css/admin.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,6 +17,8 @@
 	        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="./users.aspx">View & Edit Users</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="./add_user.aspx">Add New User</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="./users_by_role.aspx">View Users By Role</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Admin/Default.aspx">Back to Admin's Homepage</asp:HyperLink></li>
+
         </ul>
             <div style="clear:both;"></div>
         <div class="homeDiv">

@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/jewelry.master" AutoEventWireup="false" CodeFile="ViewAll.aspx.vb" Inherits="Admin_ViewAll" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <title>Admin's View All</title>
+     <link rel="stylesheet" type="text/css"href="../css/style.css" />
+     <link rel="stylesheet" type="text/css"href="../css/admin.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <center>

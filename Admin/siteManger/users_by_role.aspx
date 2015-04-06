@@ -1,11 +1,12 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="users.aspx.vb" Inherits="admin_site_mgr_users" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="users_by_role.aspx.vb" Inherits="users_by_role" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>View & Edit Users</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title></title>
+        <link rel="stylesheet" type="text/css"href="../../css/style.css" />
+     <link rel="stylesheet" type="text/css"href="../../css/admin.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -14,13 +15,27 @@
         <ul id="nav">
             <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="./default.aspx">Home</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="./roles.aspx">Role Manager</asp:HyperLink></li>
-	        <li class="currentPage"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="./users.aspx">View & Edit Users</asp:HyperLink></li>
+	        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="./users.aspx">View & Edit Users</asp:HyperLink></li>
 	        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="./add_user.aspx">Add New User</asp:HyperLink></li>
-	        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="./users_by_role.aspx">View Users By Role</asp:HyperLink></li>
-        </ul>
+	        <li class="currentPage"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="./users_by_role.aspx">View Users By Role</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Admin/Default.aspx">Back to Admin's Homepage</asp:HyperLink></li>
 
-        <h2>View and Edit Users</h2>
-<asp:GridView runat="server" ID="Users" AutoGenerateColumns="false" CssClass="cssGridView" AlternatingRowStyle-CssClass="odd" GridLines="none" >
+        </ul>
+        <br /><br /><br />
+<div class="roleDiv">
+    Role filter:
+
+<asp:DropDownList ID="UserRoles" runat="server" AppendDataBoundItems="true" AutoPostBack="true">
+<asp:ListItem>Show All</asp:ListItem>
+</asp:DropDownList>
+
+</div>
+
+
+<asp:GridView runat="server" ID="Users" AutoGenerateColumns="false"
+	 CssClass="cssGridView" AlternatingRowStyle-CssClass="odd" GridLines="none" 
+	AllowSorting="true"
+	>
 <Columns>
 	<asp:TemplateField>
 		<HeaderTemplate>User Name</HeaderTemplate>
