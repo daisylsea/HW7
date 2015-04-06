@@ -9,7 +9,7 @@ Partial Class Admin_New
 
 
     Protected Sub FormView1_ItemInserted(sender As Object, e As FormViewInsertedEventArgs) Handles FormView1.ItemInserted
-        Response.Redirect("./Default.aspx")
+        Response.Redirect("./ViewAll.aspx")
     End Sub
 
 End Class

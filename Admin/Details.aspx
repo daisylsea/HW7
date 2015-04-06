@@ -1,19 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="1Details.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/jewelry.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Admin_Details" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
-</head>
-<body>
-     <center>
-    <form id="form1" runat="server">
-    <div>
-    
-        Hello customer!
-        <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <center>
+    <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
         <br />
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_jewelry %>" DeleteCommand="DELETE FROM [xliang1_jewelry] WHERE [j_ID] = @j_ID" InsertCommand="INSERT INTO [xliang1_jewelry] ([j_name], [j_color], [j_size], [j_weight], [j_number]) VALUES (@j_name, @j_color, @j_size, @j_weight, @j_number)" SelectCommand="SELECT * FROM [xliang1_jewelry] WHERE ([j_ID] = @j_ID)" UpdateCommand="UPDATE [xliang1_jewelry] SET [j_name] = @j_name, [j_color] = @j_color, [j_size] = @j_size, [j_weight] = @j_weight, [j_number] = @j_number WHERE [j_ID] = @j_ID">
@@ -42,8 +33,7 @@
     
     &nbsp;<br />
         <span class="deleteJewelry"><asp:Label ID="lbl_deletedJewelry" runat="server"></asp:Label></span>
-    
-    </div>
+   
         <asp:DetailsView ID="DetailsView1" 
             runat="server" AllowPaging="True" 
             AutoGenerateRows="False" 
@@ -71,7 +61,6 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
-    </form>
-     </center>
-</body>
-</html>
+        </center>
+</asp:Content>
+

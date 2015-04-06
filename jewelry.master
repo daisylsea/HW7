@@ -24,11 +24,11 @@
         <div id="menu">
             <ul id="nav">
                 <li><a href="./Default.aspx">Home</a></li>
-                <li><a href="./Admin/Default.aspx">Admin</a></li>
+                <li><a href="./Admin/ViewAll.aspx">Admin</a></li>
                 <li><a href="./ViewAll.aspx">View All</a></li>
                 <li><a href="./Admin/New.aspx">New Jewelry</a></li>
                 <li><a href="./AboutUs.aspx">About Us</a></li>
-                <li><a href="./ContactUS.aspx">Contact Us</a></li>
+                <li><a href="./ContactUs.aspx">Contact Us</a></li>
                 <li><a href="./login/login.aspx">Login</a></li>
             </ul>
         </div>
