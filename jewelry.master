@@ -1,0 +1,46 @@
+﻿<%@ Master Language="VB" CodeFile="jewelry.master.vb" Inherits="jewelry" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <link rel="stylesheet" type="text/css"href="./css/style.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            <h1>Sonali Jewelry</h1>
+            <h2>Search online and get your favorate jewelry in-store.</h2>
+        </div>
+        <div id="right_header">
+           
+            <asp:Image ID="logo" runat="server" Height="170px" Width="376px" ImageUrl="~/css/logo.jpg" />
+        </div>
+        <div id="menu">
+            <ul id="nav">
+                <li><a href="./Default.aspx">Home</a></li>
+                <li><a href="./Admin/Default.aspx">Admin</a></li>
+                <li><a href="./ViewAll.aspx">View All</a></li>
+                <li><a href="./Admin/New.aspx">New Jewelry</a></li>
+                <li><a href="./AboutUs.aspx">About Us</a></li>
+                <li><a href="./ContactUS.aspx">Contact Us</a></li>
+                <li><a href="./login/login.aspx">Login</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            © 2015 Sonali Jewelry
+        </div>
+    </div>
+    </form>
+</body>
+</html>

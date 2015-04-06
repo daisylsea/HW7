@@ -1,10 +1,19 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/jewelry.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Details" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="1Details.aspx.vb" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <center>
-    <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+     <center>
+    <form id="form1" runat="server">
+    <div>
+    
+
+        <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
         <br />
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_jewelry %>"  SelectCommand="SELECT * FROM [xliang1_jewelry] WHERE ([j_ID] = @j_ID)" >
@@ -53,6 +62,7 @@
 
 <PagerStyle CssClass="pager"></PagerStyle>
         </asp:DetailsView>
-    </center>
-</asp:Content>
-
+    </form>
+     </center>
+</body>
+</html>

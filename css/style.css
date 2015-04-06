@@ -1,11 +1,80 @@
 ﻿body {
-    background-color: mintcream;
+    background-color: lavender;
     padding: 20px;
 }
-img{width:200px; border:solid 1px black;}
-h1{font-weight:bold;}
+
+h1{font-family: Georgia,serif;color:navy;}
+h2{font-family:Arial, Helvetica, sans-serif; font-variant:small-caps;color:navy;}
 .deleteJewelry{color:red; font-style:italic;}
-.error{color:red; font:bold;}
+.error{color:red; font-weight :bold;}
+
+#container{background-color:beige;
+           padding:20px;
+           margin:0 auto;
+           border:1px solid black;
+           width:900px;
+}
+
+#header{background-color:lightblue;
+        color:navy;
+        padding:10px;
+        margin:0 auto;
+        width:500px;
+        height:150px;
+        float:left;
+        border-top:1px solid black;
+        border-left:1px solid black;
+        border-bottom:1px solid black;
+}
+#main{background-color:lavender;
+      color:navy;
+      padding:10px;
+      margin:0 auto;
+      border-left: 1px solid brown;
+      border-right:1px solid brown;
+}
+#footer{background-color:royalblue;
+        color:salmon;
+        padding:10px;
+        margin:0 auto;
+        border:1px solid chocolate;
+        text-align: center;
+        font-family: Arial,Helvetica, sans-serif;
+        font-variant:small-caps;
+}
+
+/*Menu start*/
+#nav{
+    width:898px;
+    float:left;
+    margin:0 0 3em 0;
+    padding:0;
+    list-style :none;
+    background-color:#f2f2f2;
+    border: 1px solid black;
+    
+}
+#nav li{
+    float:left;
+}
+#nav li a{
+    display:block;
+    padding:8px 15px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#069;
+    border-right:1px solid #ccc;
+}
+#nav li a:hover {
+    color:#c00;
+    background-color: #fff;
+}
+/*Menu end*/
+.center_img{width:880px;
+            display :block;
+           margin-left: auto;
+           margin-right:auto;
+}
 
 /* CSS to format a gridview -- START*/
 .cssgridview { width:100%; margin:5px 0 10px 0; border:solid 1px #525252;
