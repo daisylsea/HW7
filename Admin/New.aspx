@@ -39,7 +39,7 @@
             <InsertItemTemplate>
                   <table>
                    <tr>
-                       <td id="head"style="text-align:right; ">
+                       <td id="head"style="text-align:right; background-color:salmon;">
                           Jewelry Name 
                         </td>
                        <td id="text"style="text-align:left">

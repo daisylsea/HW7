@@ -56,7 +56,7 @@
             >
             <Fields>
                 <asp:BoundField DataField="j_ID" HeaderText="Jewelry ID" InsertVisible="False" ReadOnly="True" SortExpression="j_ID" />
-                <asp:BoundField DataField="j_name" HeaderText="Jewelry Name" SortExpression="j_name" />
+                <asp:BoundField DataField="j_name" HeaderText="Jewelry Name" SortExpression="j_name" HeaderStyle-BackColor="Salmon" />
                 <asp:BoundField DataField="j_color" HeaderText="Color" SortExpression="j_color" />
                 <asp:BoundField DataField="j_size" HeaderText="Size" SortExpression="j_size" />
                 <asp:BoundField DataField="j_weight" HeaderText="Weight" SortExpression="j_weight" />
